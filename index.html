@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acceler8 | STEM Racing &amp; F1 in Schools Team</title>
+  
+  <!-- Website Tab Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.png">
+  <link rel="alternate icon" href="logo.png" type="image/png">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -12,104 +17,383 @@
     .font-orbitron { font-family: 'Orbitron', sans-serif; }
     .glow-red { box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
     .placeholder-pattern { background-image: radial-gradient(#374151 1px, transparent 1px); background-size: 16px 16px; }
+    
+    /* Smooth transitions for carousel slides */
+    .carousel-slide {
+      transition: opacity 0.6s ease-in-out;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col">
+
+  <!-- Header / Navigation -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 bg-slate-800 border border-red-500/50 rounded flex items-center justify-center overflow-hidden">
-          <img src="logo.png" alt="Acceler8 Logo" class="w-full h-full object-contain p-1 hidden" onload="this.classList.remove('hidden'); document.getElementById('logo-fallback-header').classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div id="logo-fallback-header" class="text-red-500 font-orbitron font-bold text-xl">A8</div>
+          <!-- Main SVG Logo -->
+          <img src="logo.png" alt="Acceler8 Logo" class="w-full h-full object-contain p-1" onerror="this.classList.add('hidden'); document.getElementById('logo-fallback-header').classList.remove('hidden')">
+          <div id="logo-fallback-header" class="hidden text-red-500 font-orbitron font-bold text-xl">A8</div>
         </div>
-        <div><span class="font-orbitron font-extrabold text-2xl text-white tracking-wider">ACCELER<span class="text-red-500">8</span></span><span class="block text-xs text-slate-400 -mt-1 tracking-widest uppercase">Langley Grammar School</span></div>
+        <div>
+          <span class="font-orbitron font-extrabold text-2xl text-white tracking-wider">ACCELER<span class="text-red-500">8</span></span>
+          <span class="block text-xs text-slate-400 -mt-1 tracking-widest uppercase">Langley Grammar School</span>
+        </div>
       </div>
       <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase">
-        <a href="#about" class="hover:text-red-400 transition">About STEM Racing</a><a href="#team" class="hover:text-red-400 transition">Team Roster</a><a href="#sponsorship" class="hover:text-red-400 transition">Sponsorship</a><a href="#sponsors-display" class="hover:text-red-400 transition">Our Partners</a><a href="#contact" class="hover:text-red-400 transition">Contact</a>
+        <a href="#about" class="hover:text-red-400 transition">About STEM Racing</a>
+        <a href="#team" class="hover:text-red-400 transition">Team Roster</a>
+        <a href="#sponsorship" class="hover:text-red-400 transition">Sponsorship</a>
+        <a href="#sponsors-display" class="hover:text-red-400 transition">Our Partners</a>
+        <a href="#contact" class="hover:text-red-400 transition">Contact</a>
       </nav>
       <a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-4 py-2 rounded text-xs uppercase tracking-wider transition glow-red">Sponsor Us</a>
     </div>
   </header>
 
+  <!-- Hero Section with Interactive Carousel -->
   <section class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 py-20 border-b border-slate-800 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
-        <h1 class="font-orbitron font-black text-5xl lg:text-6xl text-white tracking-tight leading-none mb-6">ENGINEERED FOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">SPEED.</span></h1>
-        <p class="text-slate-300 text-lg mb-8 leading-relaxed">We are <strong>Acceler8</strong>, a student team from <strong>Langley Grammar School</strong> competing in STEM Racing UK. Combining CAD design, aerodynamic testing, precision manufacturing, and enterprise, we're building our team and our car for competition.</p>
-        <div class="flex flex-wrap gap-4"><a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-sm uppercase tracking-wider transition glow-red">Partner With Us</a><a href="#about" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-orbitron font-semibold px-6 py-3 rounded text-sm uppercase tracking-wider transition">Learn More</a></div>
+        <h1 class="font-orbitron font-black text-5xl lg:text-6xl text-white tracking-tight leading-none mb-6">
+          ENGINEERED FOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">SPEED.</span>
+        </h1>
+        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+          We are <strong>Acceler8</strong>, a student team from <strong>Langley Grammar School</strong> competing in STEM Racing UK. Combining CAD design, aerodynamic testing, precision manufacturing, and enterprise, we're building our team and our car for competition.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-sm uppercase tracking-wider transition glow-red">Partner With Us</a>
+          <a href="#about" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-orbitron font-semibold px-6 py-3 rounded text-sm uppercase tracking-wider transition">Learn More</a>
+        </div>
       </div>
-      <div class="relative flex items-center justify-center">
-        <div class="w-full aspect-video bg-slate-900/80 border-2 border-dashed border-slate-700 rounded-xl p-6 flex items-center justify-center text-center placeholder-pattern">
-          <img src="team-logo-large.png" alt="Acceler8 team logo or car render" class="max-h-full max-w-full object-contain hidden" onload="this.classList.remove('hidden'); document.getElementById('hero-placeholder-text').classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div id="hero-placeholder-text" class="space-y-3"><i class="fa-solid fa-flag-checkered text-5xl text-slate-600"></i><p class="font-orbitron text-sm font-bold text-slate-400">TEAM LOGO / CAR RENDER</p><p class="text-xs text-slate-500 max-w-xs">Add a PNG with transparency (alpha channel), or an SVG, as <code class="bg-slate-800 px-1 py-0.5 rounded text-red-400">team-logo-large.png</code>.</p></div>
+
+      <!-- IMAGE CAROUSEL CONTAINER (1.jpeg to 6.jpeg) -->
+      <div class="relative w-full aspect-video bg-slate-950 border-2 border-slate-800 rounded-xl overflow-hidden shadow-2xl group">
+        <div id="carousel-container" class="relative w-full h-full">
+          <!-- Slide 1 -->
+          <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-500">
+            <img src="1.jpeg" alt="Acceler8 Showcase 1" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+            <img src="2.jpeg" alt="Acceler8 Showcase 2" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+            <img src="3.jpeg" alt="Acceler8 Showcase 3" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+            <img src="4.jpeg" alt="Acceler8 Showcase 4" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+            <img src="5.jpeg" alt="Acceler8 Showcase 5" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+          <!-- Slide 6 -->
+          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+            <img src="6.jpeg" alt="Acceler8 Showcase 6" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          <span onclick="setSlide(0)" class="indicator w-2.5 h-2.5 rounded-full bg-red-500 cursor-pointer"></span>
+          <span onclick="setSlide(1)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
+          <span onclick="setSlide(2)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
+          <span onclick="setSlide(3)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
+          <span onclick="setSlide(4)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
+          <span onclick="setSlide(5)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- About STEM Racing Section -->
   <section id="about" class="py-16 bg-slate-950 border-b border-slate-900">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center max-w-3xl mx-auto mb-12"><h2 class="font-orbitron font-bold text-3xl text-white mb-4">WHAT IS <span class="text-red-500">STEM RACING UK?</span></h2><p class="text-slate-400">STEM Racing (formerly known as F1 in Schools) is a science, technology, engineering, and mathematics competition for students aged 9–19. Teams design, manufacture, and race miniature cars while developing real-world enterprise skills. <a class="text-red-400 hover:underline" href="https://www.stemracing.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.</p></div>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-orbitron font-bold text-3xl text-white mb-4">WHAT IS <span class="text-red-500">STEM RACING UK?</span></h2>
+        <p class="text-slate-400">STEM Racing (formerly known as F1 in Schools) is a science, technology, engineering, and mathematics competition for students aged 9–19. Teams design, manufacture, and race miniature cars while developing real-world enterprise skills. <a class="text-red-400 hover:underline" href="https://www.stemracing.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.</p>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800"><div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-drafting-compass"></i></div><h3 class="font-orbitron font-bold text-xl text-white mb-2">CAD &amp; Aerodynamics</h3><p class="text-slate-400 text-sm">Designing a miniature CO₂-powered car using CAD, balancing drag reduction and performance.</p></article>
-        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800"><div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-microchip"></i></div><h3 class="font-orbitron font-bold text-xl text-white mb-2">CAM &amp; Manufacturing</h3><p class="text-slate-400 text-sm">Manufacturing our car using CNC machining, 3D printing, and precision finishing techniques.</p></article>
-        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800"><div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-chart-line"></i></div><h3 class="font-orbitron font-bold text-xl text-white mb-2">Enterprise &amp; Teamwork</h3><p class="text-slate-400 text-sm">Managing budgets, pitching to sponsors, designing pit displays, and presenting our work to judges.</p></article>
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-drafting-compass"></i></div>
+          <h3 class="font-orbitron font-bold text-xl text-white mb-2">CAD &amp; Aerodynamics</h3>
+          <p class="text-slate-400 text-sm">Designing a miniature CO₂-powered car using CAD, balancing drag reduction and performance.</p>
+        </article>
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="font-orbitron font-bold text-xl text-white mb-2">CAM &amp; Manufacturing</h3>
+          <p class="text-slate-400 text-sm">Manufacturing our car using CNC machining, 3D printing, and precision finishing techniques.</p>
+        </article>
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="font-orbitron font-bold text-xl text-white mb-2">Enterprise &amp; Teamwork</h3>
+          <p class="text-slate-400 text-sm">Managing budgets, pitching to sponsors, designing pit displays, and presenting our work to judges.</p>
+        </article>
       </div>
     </div>
   </section>
 
+  <!-- Team Roster Section -->
   <section id="team" class="py-20 bg-slate-900 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center max-w-2xl mx-auto mb-16"><h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">MEET THE <span class="text-red-500">TEAM</span></h2><p class="text-slate-400">Six students from Langley Grammar School. Every team member studies Business GCSE, bringing enterprise skills to every part of our project.</p></div>
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">MEET THE <span class="text-red-500">TEAM</span></h2>
+        <p class="text-slate-400">Six students from Langley Grammar School. Every team member studies Business GCSE, bringing enterprise skills to every part of our project.</p>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="Gabriel.png" alt="Gabriel Dumoulin" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-user-gear text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-gabriel.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Team Manager</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Gabriel Dumoulin</h3><div class="flex flex-wrap gap-1 mb-3"></div><p class="text-slate-400 text-sm mb-4">Overseeing project timelines, team coordination, competition compliance, and logistics.</p><a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23GabrielDumoulin@lgs.slough.sch.uk</a></div>
+        
+        <!-- Gabriel Dumoulin -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Gabriel.png" alt="Gabriel Dumoulin" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-user-gear text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">Gabriel.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Team Manager</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Gabriel Dumoulin</h3>
+            <p class="text-slate-400 text-sm mb-4">Overseeing project timelines, team coordination, competition compliance, and logistics.</p>
+            <a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23GabrielDumoulin@lgs.slough.sch.uk</a>
+          </div>
         </article>
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="Vihan.png" alt="Vihan Vashi" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-wind text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-vihan.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Design Engineer</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Vihan Vashi</h3><div class="flex flex-wrap gap-1 mb-3"><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">DT GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender</span></div><p class="text-slate-400 text-sm mb-4">Specialising in aerodynamics CFD testing, downforce optimisation, and 3D spatial reasoning.</p><a href="mailto:23VihanVashi@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23VihanVashi@lgs.slough.sch.uk</a></div>
+
+        <!-- Vihan Vashi -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Vihan.png" alt="Vihan Vashi" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-wind text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">Vihan.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Design Engineer</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Vihan Vashi</h3>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">DT GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Specialising in aerodynamics CFD testing, downforce optimisation, and 3D spatial reasoning.</p>
+            <a href="mailto:23VihanVashi@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23VihanVashi@lgs.slough.sch.uk</a>
+          </div>
         </article>
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="Aami.png" alt="Aami Asif" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-gears text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-aami.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Manufacturing Engineer</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Aami Asif</h3><div class="flex flex-wrap gap-1 mb-3"><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span></div><p class="text-slate-400 text-sm mb-4">Managing CAM tooling paths, CNC block machining, 3D printing tolerances, and assembly.</p><a href="mailto:23AamiAsif@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23AamiAsif@lgs.slough.sch.uk</a></div>
+
+        <!-- Aami Asif -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Aami.png" alt="Aami Asif" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-gears text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">Aami.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Manufacturing Engineer</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Aami Asif</h3>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Managing CAM tooling paths, CNC block machining, 3D printing tolerances, and assembly.</p>
+            <a href="mailto:23AamiAsif@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23AamiAsif@lgs.slough.sch.uk</a>
+          </div>
         </article>
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="Ismail.png" alt="Ismail Nasim" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-boxes-packing text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-ismail.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Resource Manager</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Ismail Nasim</h3><div class="flex flex-wrap gap-1 mb-3"><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span></div><p class="text-slate-400 text-sm mb-4">Handling component procurement, material sourcing, inventory control, and partner relations.</p><a href="mailto:23IsmailNasim@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23IsmailNasim@lgs.slough.sch.uk</a></div>
+
+        <!-- Ismail Nasim -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Ismail.png" alt="Ismail Nasim" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-boxes-packing text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">Ismail.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Resource Manager</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Ismail Nasim</h3>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Handling component procurement, material sourcing, inventory control, and partner relations.</p>
+            <a href="mailto:23IsmailNasim@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23IsmailNasim@lgs.slough.sch.uk</a>
+          </div>
         </article>
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="Arjun.png" alt="Arjun Hariharan" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-palette text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-arjun.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Graphic Designer</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Arjun Hariharan</h3><div class="flex flex-wrap gap-1 mb-3"><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender / Web / Python</span></div><p class="text-slate-400 text-sm mb-4">Lead developer and visual artist, skilled in 3D Blender rendering, HTML/CSS/JS, Python, and Flutter UI.</p><a href="mailto:23ArjunSivashanmugamHariharan@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono truncate max-w-full"><i class="fa-solid fa-envelope mr-2 text-red-500 flex-shrink-0"></i><span class="truncate">23ArjunSivashanmugamHariharan@lgs.slough.sch.uk</span></a></div>
+
+        <!-- Arjun Hariharan -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Arjun.png" alt="Arjun Hariharan" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-palette text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">Arjun.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Graphic Designer</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Arjun Hariharan</h3>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender / Web / Python</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Lead developer and visual artist, skilled in 3D Blender rendering, HTML/CSS/JS, Python, and Flutter UI.</p>
+            <a href="mailto:23ArjunSivashanmugamHariharan@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono truncate max-w-full"><i class="fa-solid fa-envelope mr-2 text-red-500 flex-shrink-0"></i><span class="truncate">23ArjunSivashanmugamHariharan@lgs.slough.sch.uk</span></a>
+          </div>
         </article>
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition">
-          <div class="aspect-square bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-slate-800"><img src="John.png" alt="John Mathew" class="w-full h-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="flex flex-col items-center justify-center text-slate-600 p-4 text-center"><i class="fa-solid fa-bullhorn text-6xl mb-2"></i><span class="text-xs font-orbitron text-slate-500">PHOTO PLACEHOLDER</span><span class="text-[10px] text-slate-600">team-john.png (transparent PNG supported)</span></div></div>
-          <div class="p-6"><span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Business Manager</span><h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">John Mathew</h3><div class="flex flex-wrap gap-1 mb-3"><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span><span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span></div><p class="text-slate-400 text-sm mb-4">Managing corporate outreach, sponsor packages, press materials, and website partnership branding.</p><a href="mailto:23JohnMathew@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23JohnMathew@lgs.slough.sch.uk</a></div>
+
+        <!-- John Mathew -->
+        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="John.png" alt="John Mathew" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+            <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
+              <i class="fa-solid fa-bullhorn text-6xl mb-2"></i>
+              <span class="text-xs font-orbitron text-slate-500">John.png</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Business Manager</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">John Mathew</h3>
+            <div class="flex flex-wrap gap-1 mb-3">
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">Managing corporate outreach, sponsor packages, press materials, and website partnership branding.</p>
+            <a href="mailto:23JohnMathew@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23JohnMathew@lgs.slough.sch.uk</a>
+          </div>
         </article>
+
       </div>
     </div>
   </section>
 
+  <!-- Sponsorship Section -->
   <section id="sponsorship" class="py-20 bg-slate-950 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center max-w-3xl mx-auto mb-12"><h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">PARTNER WITH <span class="text-red-500">ACCELER8</span></h2><p class="text-slate-400">Support local UK STEM talent from Langley Grammar School. We welcome monetary funding, raw materials, manufacturing support, and merchandise printing.</p></div>
-      <div class="mb-12 bg-gradient-to-r from-red-950/80 via-slate-900 to-slate-900 border border-red-500/40 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6"><div class="space-y-2"><div class="inline-flex items-center space-x-2 text-red-400 font-orbitron text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-boxes-packing"></i><span>In-Kind &amp; Material Sponsorship Options</span></div><h3 class="font-orbitron font-bold text-2xl text-white">Provide Materials &amp; Merch!</h3><p class="text-slate-300 text-sm max-w-2xl">We welcome partnerships for CNC milling, 3D printing filaments, spray painting/clear coating, team uniforms, printed banners, and display materials.</p></div><a href="#contact" class="flex-shrink-0 bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-xs uppercase tracking-wider transition glow-red">Offer Materials / Merch</a></div>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">PARTNER WITH <span class="text-red-500">ACCELER8</span></h2>
+        <p class="text-slate-400">Support local UK STEM talent from Langley Grammar School. We welcome monetary funding, raw materials, manufacturing support, and merchandise printing.</p>
+      </div>
+      <div class="mb-12 bg-gradient-to-r from-red-950/80 via-slate-900 to-slate-900 border border-red-500/40 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 text-red-400 font-orbitron text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-boxes-packing"></i><span>In-Kind &amp; Material Sponsorship Options</span></div>
+          <h3 class="font-orbitron font-bold text-2xl text-white">Provide Materials &amp; Merch!</h3>
+          <p class="text-slate-300 text-sm max-w-2xl">We welcome partnerships for CNC milling, 3D printing filaments, spray painting/clear coating, team uniforms, printed banners, and display materials.</p>
+        </div>
+        <a href="#contact" class="flex-shrink-0 bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-xs uppercase tracking-wider transition glow-red">Offer Materials / Merch</a>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between"><div><h3 class="font-orbitron font-bold text-xl text-amber-600 mb-2">BRONZE / MATERIAL &amp; MERCH</h3><div class="text-2xl font-orbitron font-extrabold text-white mb-4">In-Kind <span class="text-xs font-normal text-slate-400">or £50–£150</span></div><ul class="text-sm text-slate-300 space-y-3 mb-8"><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Website logo placement</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Portfolio mention</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Materials, manufacturing, or merchandise support</li></ul></div><a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Offer Support</a></article>
-        <article class="bg-slate-900 border-2 border-red-500/50 rounded-xl p-6 flex flex-col justify-between relative glow-red"><div class="absolute -top-3 right-6 bg-red-600 text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded-full uppercase">Most Popular</div><div><h3 class="font-orbitron font-bold text-xl text-slate-300 mb-2">SILVER PARTNER</h3><div class="text-2xl font-orbitron font-extrabold text-white mb-4">£150–£500 <span class="text-xs font-normal text-slate-400">or full merch/parts supply</span></div><ul class="text-sm text-slate-300 space-y-3 mb-8"><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Featured website logo with link</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Pit display banner logo</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Team uniform branding</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>All Bronze benefits</li></ul></div><a href="#contact" class="block text-center bg-red-600 hover:bg-red-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Partner Now</a></article>
-        <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between"><div><h3 class="font-orbitron font-bold text-xl text-yellow-500 mb-2">TITLE SPONSOR</h3><div class="text-2xl font-orbitron font-extrabold text-white mb-4">£500+ <span class="text-xs font-normal text-slate-400">or full team sponsorship</span></div><ul class="text-sm text-slate-300 space-y-3 mb-8"><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Prime logo placement on car</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Headline website recognition</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>Primary uniform placement</li><li><i class="fa-solid fa-check text-red-500 mr-2"></i>CSR case study and media package</li></ul></div><a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Inquire</a></article>
+        <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="font-orbitron font-bold text-xl text-amber-600 mb-2">BRONZE / MATERIAL &amp; MERCH</h3>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">In-Kind <span class="text-xs font-normal text-slate-400">or £50–£150</span></div>
+            <ul class="text-sm text-slate-300 space-y-3 mb-8">
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Website logo placement</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Portfolio mention</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Materials, manufacturing, or merchandise support</li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Offer Support</a>
+        </article>
+        <article class="bg-slate-900 border-2 border-red-500/50 rounded-xl p-6 flex flex-col justify-between relative glow-red">
+          <div class="absolute -top-3 right-6 bg-red-600 text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
+          <div>
+            <h3 class="font-orbitron font-bold text-xl text-slate-300 mb-2">SILVER PARTNER</h3>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£150–£500 <span class="text-xs font-normal text-slate-400">or full merch/parts supply</span></div>
+            <ul class="text-sm text-slate-300 space-y-3 mb-8">
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Featured website logo with link</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Pit display banner logo</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Team uniform branding</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>All Bronze benefits</li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center bg-red-600 hover:bg-red-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Partner Now</a>
+        </article>
+        <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="font-orbitron font-bold text-xl text-yellow-500 mb-2">TITLE SPONSOR</h3>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£500+ <span class="text-xs font-normal text-slate-400">or full team sponsorship</span></div>
+            <ul class="text-sm text-slate-300 space-y-3 mb-8">
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Prime logo placement on car</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Headline website recognition</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Primary uniform placement</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>CSR case study and media package</li>
+            </ul>
+          </div>
+          <a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Inquire</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="sponsors-display" class="py-16 bg-slate-900 border-b border-slate-800"><div class="max-w-7xl mx-auto px-4"><div class="text-center max-w-2xl mx-auto mb-12"><h2 class="font-orbitron font-bold text-3xl text-white mb-2">OUR <span class="text-red-500">SPONSORS &amp; PARTNERS</span></h2><p class="text-slate-400 text-sm">Businesses and organisations supporting Team Acceler8's STEM Racing journey.</p></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed"><img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Title / Gold Sponsor</p></div></div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed"><img src="sponsor-logo-2.png" alt="Merch sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p><p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p></div></div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed"><img src="sponsor-logo-3.png" alt="Material sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p><p class="text-[10px] text-slate-600">3D Printing / Machining</p></div></div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed"><img src="sponsor-logo-4.png" alt="Silver Partner logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')"><div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Silver Partner</p></div></div>
-      </div></div></section>
+  <!-- Partners Display Section -->
+  <section id="sponsors-display" class="py-16 bg-slate-900 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="font-orbitron font-bold text-3xl text-white mb-2">OUR <span class="text-red-500">SPONSORS &amp; PARTNERS</span></h2>
+        <p class="text-slate-400 text-sm">Businesses and organisations supporting Team Acceler8's STEM Racing journey.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
+          <img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Title / Gold Sponsor</p></div>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
+          <img src="sponsor-logo-2.png" alt="Merch sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p><p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p></div>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
+          <img src="sponsor-logo-3.png" alt="Material sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p><p class="text-[10px] text-slate-600">3D Printing / Machining</p></div>
+        </div>
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
+          <img src="sponsor-logo-4.png" alt="Silver Partner logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Silver Partner</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section id="contact" class="py-20 bg-slate-900"><div class="max-w-4xl mx-auto px-4"><div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl"><div class="text-center mb-8"><h2 class="font-orbitron font-bold text-3xl text-white mb-2">GET IN <span class="text-red-500">TOUCH</span></h2><p class="text-slate-400 text-sm">Send a message to discuss monetary, material, or merchandise sponsorship for Team Acceler8.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-xs font-mono"><div class="bg-slate-900 p-4 rounded-lg border border-slate-800"><span class="text-slate-500 uppercase block mb-1">School Base</span><span class="text-white font-sans text-sm font-semibold">Langley Grammar School, Slough, UK</span></div><div class="bg-slate-900 p-4 rounded-lg border border-slate-800"><span class="text-slate-500 uppercase block mb-1">Team Manager Contact</span><a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="text-red-400 hover:underline">23GabrielDumoulin@lgs.slough.sch.uk</a></div></div><form action="mailto:23GabrielDumoulin@lgs.slough.sch.uk" method="post" enctype="text/plain" class="space-y-4"><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><input type="text" name="Name" placeholder="Your Name / Company Name" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"><input type="email" name="Email" placeholder="Your Email Address" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"></div><select name="Sponsorship_Type" class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-red-500"><option value="Material/Merch Sponsorship">In-Kind: Materials, Merch, or Manufacturing Services</option><option value="Monetary Sponsorship">Monetary Funding (Bronze / Silver / Gold Tier)</option><option value="General Inquiry">General Partnership Inquiry</option></select><textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8." class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"></textarea><button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold py-3 rounded text-sm uppercase tracking-wider transition glow-red">Send Sponsorship Offer</button></form></div></div></section>
-  <footer class="mt-auto bg-slate-950 border-t border-slate-900 py-6 text-center text-xs text-slate-500"><div class="max-w-7xl mx-auto px-4"><p>© 2026 Team Acceler8 — Langley Grammar School. STEM Racing UK / F1 in Schools.</p></div></footer>
-</body>
-</html>
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl">
+        <div class="text-center mb-8">
+          <h2 class="font-orbitron font-bold text-3xl text-white mb-2">GET IN <span class="text-red-500">TOUCH</span></h2>
+          <p class="text-slate-400 text-sm">Send a message to discuss monetary, material, or merchandise sponsorship for Team Acceler8.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-xs font-mono">
+          <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+            <span class="text-slate-500 uppercase block mb-1">School Base</span>
+            <span class="text-white font-sans text-sm font-semibold">Langley Grammar School, Slough, UK</span>
+          </div>
+          <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+            <span class="text-slate-500 uppercase block mb-1">Team Manager Contact</span>
+            <a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="text-red-400 hover:underline">23GabrielDumoulin@lgs.slough.sch.uk</a>
+          </div>
+        </div>
+        <form action="mailto:23GabrielDumoulin@lgs.slough.sch.uk" method="post" enctype="text/plain" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" name="Name" placeholder="Your Name / Company Name" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
+            <input type="email" name="Email" placeholder="Your Email Address" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
+          </div>
+          <select name="Sponsorship_Type" class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-red-500">
+            <option value="Material/Merch Sponsorship">In-Kind: Materials, Merch, or Manufacturing Services</option>
+            <option value="Monetary Sponsorship">Monetary Funding (Bronze / Silver / Gold Tier)</option>
+            <option value="General Inquiry">General Partnership Inquiry</option>
+          </select>
+          <textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8." class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-
