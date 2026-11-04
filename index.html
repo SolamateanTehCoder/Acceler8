@@ -26,16 +26,16 @@
 <body class="min-h-screen flex flex-col">
 
   <!-- Header / Navigation -->
+ <!-- Header / Navigation -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-<div class="flex items-center">
-  <img src="logo.png" alt="Acceler8 Logo" class="h-10 w-auto object-contain">
-</div>
-        <div>
-          <span class="font-orbitron font-extrabold text-2xl text-white tracking-wider">ACCELER<span class="text-red-500">8</span></span>
-          <span class="block text-xs text-slate-400 -mt-1 tracking-widest uppercase">Langley Grammar School</span>
-        </div>
+      
+      <!-- Left Side: Logo (Using Raw GitHub URL to bypass caching) -->
+      <div class="flex items-center">
+        <img src="https://raw.githubusercontent.com/SolamateanTehCoder/Acceler8/main/logo.png" alt="Acceler8 Logo" class="h-10 md:h-12 w-auto object-contain">
       </div>
+
+      <!-- Middle: Navigation -->
       <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase">
         <a href="#about" class="hover:text-red-400 transition">About STEM Racing</a>
         <a href="#team" class="hover:text-red-400 transition">Team Roster</a>
@@ -43,7 +43,10 @@
         <a href="#sponsors-display" class="hover:text-red-400 transition">Our Partners</a>
         <a href="#contact" class="hover:text-red-400 transition">Contact</a>
       </nav>
+
+      <!-- Right Side: Button -->
       <a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-4 py-2 rounded text-xs uppercase tracking-wider transition glow-red">Sponsor Us</a>
+      
     </div>
   </header>
 
