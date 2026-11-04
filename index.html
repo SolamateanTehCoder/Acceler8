@@ -6,54 +6,10 @@
   <title>Acceler8 | STEM Racing &amp; F1 in Schools Team</title>
   
   <!-- Website Tab Favicon -->
-  <link rel="icon" type="image/svg+xml" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="alternate icon" href="logo.png" type="image/png">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.carousel-slide');
-  const indicators = document.querySelectorAll('.indicator');
-
-  function updateCarousel() {
-    // Update slides
-    slides.forEach((slide, index) => {
-      if (index === currentSlide) {
-        slide.classList.remove('opacity-0');
-        slide.classList.add('opacity-100');
-      } else {
-        slide.classList.remove('opacity-100');
-        slide.classList.add('opacity-0');
-      }
-    });
-
-    // Update indicators
-    indicators.forEach((indicator, index) => {
-      if (index === currentSlide) {
-        indicator.classList.remove('bg-slate-600');
-        indicator.classList.add('bg-red-500');
-      } else {
-        indicator.classList.remove('bg-red-500');
-        indicator.classList.add('bg-slate-600');
-      }
-    });
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-    updateCarousel();
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-    updateCarousel();
-  }
-
-  function setSlide(index) {
-    currentSlide = index;
-    updateCarousel();
-  }
-</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
@@ -115,41 +71,41 @@
       <div class="relative w-full aspect-video bg-slate-950 border-2 border-slate-800 rounded-xl overflow-hidden shadow-2xl group">
         <div id="carousel-container" class="relative w-full h-full">
           <!-- Slide 1 -->
-          <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
             <img src="1.jpeg" alt="Acceler8 Showcase 1" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 2 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
             <img src="2.jpeg" alt="Acceler8 Showcase 2" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 3 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
             <img src="3.jpeg" alt="Acceler8 Showcase 3" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 4 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
             <img src="4.jpeg" alt="Acceler8 Showcase 4" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 5 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
             <img src="5.jpeg" alt="Acceler8 Showcase 5" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 6 -->
-          <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+          <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
             <img src="6.jpeg" alt="Acceler8 Showcase 6" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
         </div>
 
         <!-- Navigation Buttons -->
-        <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition">
+        <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition">
+        <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
 
         <!-- Carousel Indicators -->
-        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
           <span onclick="setSlide(0)" class="indicator w-2.5 h-2.5 rounded-full bg-red-500 cursor-pointer"></span>
           <span onclick="setSlide(1)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
           <span onclick="setSlide(2)" class="indicator w-2.5 h-2.5 rounded-full bg-slate-600 cursor-pointer"></span>
@@ -193,7 +149,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">MEET THE <span class="text-red-500">TEAM</span></h2>
-        <p class="text-slate-400">Six students from Langley Grammar School. Every team member studies Business GCSE, bringing enterprise skills to every part of our project.</p>
+        <p class="text-slate-400">Six students from Langley Grammar School. Every team member brings their own essential skills to every part of our project.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -440,4 +396,68 @@
             <option value="Monetary Sponsorship">Monetary Funding (Bronze / Silver / Gold Tier)</option>
             <option value="General Inquiry">General Partnership Inquiry</option>
           </select>
-          <textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8." class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-
+          <textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8." class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"></textarea>
+          <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold py-3 rounded uppercase transition glow-red">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 py-6 border-t border-slate-900">
+    <div class="text-center text-slate-500 text-sm">
+      &copy; 2026 Acceler8. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+
+    function updateCarousel() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      const indicators = document.querySelectorAll('.indicator');
+
+      if (slides.length === 0) return; 
+
+      slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+          slide.classList.remove('opacity-0', 'z-0');
+          slide.classList.add('opacity-100', 'z-10');
+        } else {
+          slide.classList.remove('opacity-100', 'z-10');
+          slide.classList.add('opacity-0', 'z-0');
+        }
+      });
+
+      indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+          indicator.classList.remove('bg-slate-600');
+          indicator.classList.add('bg-red-500');
+        } else {
+          indicator.classList.remove('bg-red-500');
+          indicator.classList.add('bg-slate-600');
+        }
+      });
+    }
+
+    function prevSlide() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+      updateCarousel();
+    }
+
+    function nextSlide() {
+      const slides = document.querySelectorAll('.carousel-slide');
+      currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+      updateCarousel();
+    }
+
+    function setSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+    
+    // Initialize carousel on load
+    document.addEventListener("DOMContentLoaded", updateCarousel);
+  </script>
+</body>
+</html>
