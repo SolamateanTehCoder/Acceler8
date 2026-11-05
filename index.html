@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acceler8 | STEM Racing &amp; F1 in Schools Team</title>
-  
+
   <!-- Website Tab Favicon -->
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="alternate icon" href="icon.png" type="image/png">
@@ -13,29 +14,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
-    body { font-family: 'Rajdhani', sans-serif; background-color: #0b0f19; color: #e2e8f0; }
-    .font-orbitron { font-family: 'Orbitron', sans-serif; }
-    .glow-red { box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
-    .placeholder-pattern { background-image: radial-gradient(#374151 1px, transparent 1px); background-size: 16px 16px; }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #0b0f19;
+      color: #e2e8f0;
+    }
+
+    .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .glow-red {
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+    }
+
+    .placeholder-pattern {
+      background-image: radial-gradient(#374151 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+
     /* Smooth transitions for carousel slides */
     .carousel-slide {
       transition: opacity 0.6s ease-in-out;
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N8WH3WVR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+  </script>
 </head>
+
 <body class="min-h-screen flex flex-col">
 
   <!-- Header / Navigation -->
- <!-- Header / Navigation -->
+  <!-- Header / Navigation -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      
+
       <!-- Left Side: Logo (Using Raw GitHub URL to bypass caching) -->
       <div class="flex items-center">
         <img src="logo.png" alt="Acceler8 Logo" class="h-10 md:h-12 w-auto object-contain">
@@ -51,61 +69,80 @@
       </nav>
 
       <!-- Right Side: Button -->
-      <a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-4 py-2 rounded text-xs uppercase tracking-wider transition glow-red">Sponsor Us</a>
-      
+      <a href="#sponsorship"
+        class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-4 py-2 rounded text-xs uppercase tracking-wider transition glow-red">Sponsor
+        Us</a>
+
     </div>
   </header>
 
   <!-- Hero Section with Interactive Carousel -->
-  <section class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 py-20 border-b border-slate-800 overflow-hidden">
+  <section
+    class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 py-20 border-b border-slate-800 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
         <h1 class="font-orbitron font-black text-5xl lg:text-6xl text-white tracking-tight leading-none mb-6">
-          ENGINEERED FOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">SPEED.</span>
+          ENGINEERED FOR <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">SPEED.</span>
         </h1>
         <p class="text-slate-300 text-lg mb-8 leading-relaxed">
-          We are <strong>Acceler8</strong>, a student team from <strong>Langley Grammar School</strong> competing in STEM Racing UK. Combining CAD design, aerodynamic testing, precision manufacturing, and enterprise, we're building our team and our car for competition.
+          We are <strong>Acceler8</strong>, a student team from <strong>Langley Grammar School</strong> competing in
+          STEM Racing UK. Combining CAD design, aerodynamic testing, precision manufacturing, and enterprise, we're
+          building our team and our car for competition.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#sponsorship" class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-sm uppercase tracking-wider transition glow-red">Partner With Us</a>
-          <a href="#about" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-orbitron font-semibold px-6 py-3 rounded text-sm uppercase tracking-wider transition">Learn More</a>
+          <a href="#sponsorship"
+            class="bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-sm uppercase tracking-wider transition glow-red">Partner
+            With Us</a>
+          <a href="#about"
+            class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-orbitron font-semibold px-6 py-3 rounded text-sm uppercase tracking-wider transition">Learn
+            More</a>
         </div>
       </div>
 
       <!-- IMAGE CAROUSEL CONTAINER (1.jpeg to 6.jpeg) -->
-      <div class="relative w-full aspect-video bg-slate-950 border-2 border-slate-800 rounded-xl overflow-hidden shadow-2xl group">
+      <div
+        class="relative w-full aspect-video bg-slate-950 border-2 border-slate-800 rounded-xl overflow-hidden shadow-2xl group">
         <div id="carousel-container" class="relative w-full h-full">
           <!-- Slide 1 -->
           <div class="carousel-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500">
-            <img src="1.jpeg" alt="Acceler8 Showcase 1" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="1.jpeg" alt="Acceler8 Showcase 1" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 2 -->
           <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
-            <img src="2.jpeg" alt="Acceler8 Showcase 2" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="2.jpeg" alt="Acceler8 Showcase 2" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 3 -->
           <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
-            <img src="3.jpeg" alt="Acceler8 Showcase 3" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="3.jpeg" alt="Acceler8 Showcase 3" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 4 -->
           <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
-            <img src="4.jpeg" alt="Acceler8 Showcase 4" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="4.jpeg" alt="Acceler8 Showcase 4" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 5 -->
           <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
-            <img src="5.jpeg" alt="Acceler8 Showcase 5" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="5.jpeg" alt="Acceler8 Showcase 5" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
           <!-- Slide 6 -->
           <div class="carousel-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500">
-            <img src="6.jpeg" alt="Acceler8 Showcase 6" class="w-full h-full object-cover" onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
+            <img src="6.jpeg" alt="Acceler8 Showcase 6" class="w-full h-full object-cover"
+              onerror="this.src='logo.png'; this.className='w-full h-full object-contain p-8 bg-slate-900'">
           </div>
         </div>
 
         <!-- Navigation Buttons -->
-        <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
+        <button onclick="prevSlide()"
+          class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
+        <button onclick="nextSlide()"
+          class="absolute right-3 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center border border-slate-700 transition z-20">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
 
@@ -126,24 +163,42 @@
   <section id="about" class="py-16 bg-slate-950 border-b border-slate-900">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="font-orbitron font-bold text-3xl text-white mb-4">WHAT IS <span class="text-red-500">STEM RACING UK?</span></h2>
-        <p class="text-slate-400">STEM Racing (formerly known as F1 in Schools) is a science, technology, engineering, and mathematics competition for students aged 9–19. Teams design, manufacture, and race miniature cars while developing real-world enterprise skills. STEM competition encourages students to form teams to design, build, brand, and race miniature racing cars, through real-world engineering, marketing, and project management. Supported by Formula 1®, created with educators, backed by engineers. <a class="text-red-400 hover:underline" href="https://www.stemracing.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.</p>
+        <h2 class="font-orbitron font-bold text-3xl text-white mb-4">WHAT IS <span class="text-red-500">STEM RACING
+            UK?</span></h2>
+        <p class="text-slate-400">STEM Racing (formerly known as F1 in Schools) is a science, technology, engineering,
+          and mathematics competition for students aged 9–19. Teams design, manufacture, and race miniature cars while
+          developing real-world enterprise skills. STEM competition encourages students to form teams to design, build,
+          brand, and race miniature racing cars, through real-world engineering, marketing, and project management.
+          Supported by Formula 1®, created with educators, backed by engineers. <a class="text-red-400 hover:underline"
+            href="https://www.stemracing.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-drafting-compass"></i></div>
+          <div
+            class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900">
+            <i class="fa-solid fa-drafting-compass"></i>
+          </div>
           <h3 class="font-orbitron font-bold text-xl text-white mb-2">CAD &amp; Aerodynamics</h3>
-          <p class="text-slate-400 text-sm">Designing a miniature CO₂-powered car using CAD, balancing drag reduction and performance.</p>
+          <p class="text-slate-400 text-sm">Designing a miniature CO₂-powered car using CAD, balancing drag reduction
+            and performance.</p>
         </article>
         <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-microchip"></i></div>
+          <div
+            class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
           <h3 class="font-orbitron font-bold text-xl text-white mb-2">CAM &amp; Manufacturing</h3>
-          <p class="text-slate-400 text-sm">Manufacturing our car using CNC machining, 3D printing, and precision finishing techniques.</p>
+          <p class="text-slate-400 text-sm">Manufacturing our car using CNC machining, 3D printing, and precision
+            finishing techniques.</p>
         </article>
         <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-          <div class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900"><i class="fa-solid fa-chart-line"></i></div>
+          <div
+            class="w-12 h-12 bg-red-950/80 text-red-400 rounded-lg flex items-center justify-center text-2xl mb-4 border border-red-900">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
           <h3 class="font-orbitron font-bold text-xl text-white mb-2">Enterprise &amp; Teamwork</h3>
-          <p class="text-slate-400 text-sm">Managing budgets, pitching to sponsors, designing pit displays, and presenting our work to judges.</p>
+          <p class="text-slate-400 text-sm">Managing budgets, pitching to sponsors, designing pit displays, and
+            presenting our work to judges.</p>
         </article>
       </div>
     </div>
@@ -153,16 +208,22 @@
   <section id="team" class="py-20 bg-slate-900 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">MEET THE <span class="text-red-500">TEAM</span></h2>
-        <p class="text-slate-400">Six students from Langley Grammar School. Every team member brings their own essential skills to every part of our project.</p>
+        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">MEET THE <span
+            class="text-red-500">TEAM</span></h2>
+        <p class="text-slate-400">Six students from Langley Grammar School. Every team member brings their own essential
+          skills to every part of our project.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Gabriel Dumoulin -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="Gabriel.png" alt="Gabriel Dumoulin" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+
+        <!-- Gabriel -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Gabriel.png" alt="Gabriel"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-user-gear text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">Gabriel.png</span>
@@ -170,16 +231,20 @@
           </div>
           <div class="p-6">
             <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Team Manager</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Gabriel Dumoulin</h3>
-            <p class="text-slate-400 text-sm mb-4">Overseeing project timelines, team coordination, competition compliance, and logistics.</p>
-            <a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23GabrielDumoulin@lgs.slough.sch.uk</a>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Gabriel</h3>
+            <p class="text-slate-400 text-sm mb-4">Overseeing project timelines, team coordination, competition
+              compliance, and logistics.</p>
           </div>
         </article>
 
-        <!-- Vihan Vashi -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="Vihan.png" alt="Vihan Vashi" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+        <!-- Vihan -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Vihan.png" alt="Vihan"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-wind text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">Vihan.png</span>
@@ -187,43 +252,52 @@
           </div>
           <div class="p-6">
             <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Design Engineer</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Vihan Vashi</h3>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Vihan</h3>
             <div class="flex flex-wrap gap-1 mb-3">
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">DT GCSE</span>
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">Specialising in aerodynamics CFD testing, downforce optimisation, and 3D spatial reasoning.</p>
-            <a href="mailto:23VihanVashi@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23VihanVashi@lgs.slough.sch.uk</a>
+            <p class="text-slate-400 text-sm mb-4">Specialising in aerodynamics CFD testing, downforce optimisation, and
+              3D spatial reasoning.</p>
           </div>
         </article>
 
-        <!-- Aami Asif -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="Aami.png" alt="Aami Asif" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+        <!-- Aami -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Aami.png" alt="Aami"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-gears text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">Aami.png</span>
             </div>
           </div>
           <div class="p-6">
-            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Manufacturing Engineer</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Aami Asif</h3>
+            <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Manufacturing
+              Engineer</span>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Aami</h3>
             <div class="flex flex-wrap gap-1 mb-3">
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">Managing CAM tooling paths, CNC block machining, 3D printing tolerances, and assembly.</p>
-            <a href="mailto:23AamiAsif@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23AamiAsif@lgs.slough.sch.uk</a>
+            <p class="text-slate-400 text-sm mb-4">Managing CAM tooling paths, CNC block machining, 3D printing
+              tolerances, and assembly.</p>
           </div>
         </article>
 
-        <!-- Ismail Nasim -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="Ismail.png" alt="Ismail Nasim" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+        <!-- Ismail -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Ismail.png" alt="Ismail"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-boxes-packing text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">Ismail.png</span>
@@ -231,19 +305,23 @@
           </div>
           <div class="p-6">
             <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Resource Manager</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Ismail Nasim</h3>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Ismail</h3>
             <div class="flex flex-wrap gap-1 mb-3">
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">Handling component procurement, material sourcing, inventory control, and partner relations.</p>
-            <a href="mailto:23IsmailNasim@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23IsmailNasim@lgs.slough.sch.uk</a>
+            <p class="text-slate-400 text-sm mb-4">Handling component procurement, material sourcing, inventory control,
+              and partner relations.</p>
           </div>
         </article>
 
-        <!-- Arjun Hariharan -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="Arjun.png" alt="Arjun Hariharan" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+        <!-- Arjun -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="Arjun.png" alt="Arjun"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-palette text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">Arjun.png</span>
@@ -251,20 +329,25 @@
           </div>
           <div class="p-6">
             <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Graphic Designer</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Arjun Hariharan</h3>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">Arjun</h3>
             <div class="flex flex-wrap gap-1 mb-3">
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
-              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender / Web / Python</span>
+              <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Blender / Web /
+                Python</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">Lead developer and visual artist, skilled in 3D Blender rendering, HTML/CSS/JS, Python, and Flutter UI.</p>
-            <a href="mailto:23ArjunSivashanmugamHariharan@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono truncate max-w-full"><i class="fa-solid fa-envelope mr-2 text-red-500 flex-shrink-0"></i><span class="truncate">23ArjunSivashanmugamHariharan@lgs.slough.sch.uk</span></a>
+            <p class="text-slate-400 text-sm mb-4">Lead developer and visual artist, skilled in 3D Blender rendering,
+              HTML/CSS/JS, Python, and Flutter UI.</p>
           </div>
         </article>
 
-        <!-- John Mathew -->
-        <article class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
-          <div class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
-            <img src="John.png" alt="John Mathew" class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
+        <!-- John -->
+        <article
+          class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden group hover:border-red-500/50 transition flex flex-col justify-between">
+          <div
+            class="h-80 w-full bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden flex items-end justify-center border-b border-slate-800 pt-4 px-4">
+            <img src="John.png" alt="John"
+              class="h-full w-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">
             <div class="hidden flex-col items-center justify-center text-slate-600 p-4 text-center my-auto">
               <i class="fa-solid fa-bullhorn text-6xl mb-2"></i>
               <span class="text-xs font-orbitron text-slate-500">John.png</span>
@@ -272,13 +355,13 @@
           </div>
           <div class="p-6">
             <span class="text-xs font-bold text-red-500 font-orbitron tracking-widest uppercase">Business Manager</span>
-            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">John Mathew</h3>
+            <h3 class="font-orbitron font-bold text-2xl text-white mt-1 mb-3">John</h3>
             <div class="flex flex-wrap gap-1 mb-3">
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Business GCSE</span>
               <span class="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded font-mono">Computing GCSE</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">Managing corporate outreach, sponsor packages, press materials, and website partnership branding.</p>
-            <a href="mailto:23JohnMathew@lgs.slough.sch.uk" class="inline-flex items-center text-xs text-slate-300 hover:text-red-400 font-mono"><i class="fa-solid fa-envelope mr-2 text-red-500"></i>23JohnMathew@lgs.slough.sch.uk</a>
+            <p class="text-slate-400 text-sm mb-4">Managing corporate outreach, sponsor packages, press materials, and
+              website partnership branding.</p>
           </div>
         </article>
 
@@ -290,35 +373,52 @@
   <section id="sponsorship" class="py-20 bg-slate-950 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">PARTNER WITH <span class="text-red-500">ACCELER8</span></h2>
-        <p class="text-slate-400">Support local UK STEM talent from Langley Grammar School. We welcome monetary funding, raw materials, manufacturing support, and merchandise printing.</p>
+        <h2 class="font-orbitron font-extrabold text-4xl text-white mb-4">PARTNER WITH <span
+            class="text-red-500">ACCELER8</span></h2>
+        <p class="text-slate-400">Support local UK STEM talent from Langley Grammar School. We welcome monetary funding,
+          raw materials, manufacturing support, and merchandise printing.</p>
       </div>
-      <div class="mb-12 bg-gradient-to-r from-red-950/80 via-slate-900 to-slate-900 border border-red-500/40 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div
+        class="mb-12 bg-gradient-to-r from-red-950/80 via-slate-900 to-slate-900 border border-red-500/40 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="space-y-2">
-          <div class="inline-flex items-center space-x-2 text-red-400 font-orbitron text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-boxes-packing"></i><span>In-Kind &amp; Material Sponsorship Options</span></div>
+          <div
+            class="inline-flex items-center space-x-2 text-red-400 font-orbitron text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-boxes-packing"></i><span>In-Kind &amp; Material Sponsorship Options</span>
+          </div>
           <h3 class="font-orbitron font-bold text-2xl text-white">Provide Materials &amp; Merch!</h3>
-          <p class="text-slate-300 text-sm max-w-2xl">We welcome partnerships for CNC milling, 3D printing filaments, spray painting/clear coating, team uniforms, printed banners, and display materials.</p>
+          <p class="text-slate-300 text-sm max-w-2xl">We welcome partnerships for CNC milling, 3D printing filaments,
+            spray painting/clear coating, team uniforms, printed banners, and display materials.</p>
         </div>
-        <a href="#contact" class="flex-shrink-0 bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-xs uppercase tracking-wider transition glow-red">Offer Materials / Merch</a>
+        <a href="#contact"
+          class="flex-shrink-0 bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold px-6 py-3 rounded text-xs uppercase tracking-wider transition glow-red">Offer
+          Materials / Merch</a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
           <div>
             <h3 class="font-orbitron font-bold text-xl text-amber-600 mb-2">BRONZE / MATERIAL &amp; MERCH</h3>
-            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">In-Kind <span class="text-xs font-normal text-slate-400">or £50–£150</span></div>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">In-Kind <span
+                class="text-xs font-normal text-slate-400">or £50–£150</span></div>
             <ul class="text-sm text-slate-300 space-y-3 mb-8">
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Website logo placement</li>
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Portfolio mention</li>
-              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Materials, manufacturing, or merchandise support</li>
+              <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Materials, manufacturing, or merchandise support
+              </li>
             </ul>
           </div>
-          <a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Offer Support</a>
+          <a href="#contact"
+            class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Offer
+            Support</a>
         </article>
-        <article class="bg-slate-900 border-2 border-red-500/50 rounded-xl p-6 flex flex-col justify-between relative glow-red">
-          <div class="absolute -top-3 right-6 bg-red-600 text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
+        <article
+          class="bg-slate-900 border-2 border-red-500/50 rounded-xl p-6 flex flex-col justify-between relative glow-red">
+          <div
+            class="absolute -top-3 right-6 bg-red-600 text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded-full uppercase">
+            Most Popular</div>
           <div>
             <h3 class="font-orbitron font-bold text-xl text-slate-300 mb-2">SILVER PARTNER</h3>
-            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£150–£500 <span class="text-xs font-normal text-slate-400">or full merch/parts supply</span></div>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£150–£500 <span
+                class="text-xs font-normal text-slate-400">or full merch/parts supply</span></div>
             <ul class="text-sm text-slate-300 space-y-3 mb-8">
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Featured website logo with link</li>
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Pit display banner logo</li>
@@ -326,12 +426,15 @@
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>All Bronze benefits</li>
             </ul>
           </div>
-          <a href="#contact" class="block text-center bg-red-600 hover:bg-red-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Partner Now</a>
+          <a href="#contact"
+            class="block text-center bg-red-600 hover:bg-red-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Partner
+            Now</a>
         </article>
         <article class="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
           <div>
             <h3 class="font-orbitron font-bold text-xl text-yellow-500 mb-2">TITLE SPONSOR</h3>
-            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£500+ <span class="text-xs font-normal text-slate-400">or full team sponsorship</span></div>
+            <div class="text-2xl font-orbitron font-extrabold text-white mb-4">£500+ <span
+                class="text-xs font-normal text-slate-400">or full team sponsorship</span></div>
             <ul class="text-sm text-slate-300 space-y-3 mb-8">
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Prime logo placement on car</li>
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>Headline website recognition</li>
@@ -339,83 +442,133 @@
               <li><i class="fa-solid fa-check text-red-500 mr-2"></i>CSR case study and media package</li>
             </ul>
           </div>
-          <a href="#contact" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Inquire</a>
+          <a href="#contact"
+            class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-orbitron text-xs font-bold py-3 rounded uppercase transition">Inquire</a>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Partners Display Section -->
-<!-- Partners Display Section -->
+  <!-- Partners Display Section -->
   <section id="sponsors-display" class="py-16 bg-slate-900 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="font-orbitron font-bold text-3xl text-white mb-2">OUR <span class="text-red-500">SPONSORS &amp; PARTNERS</span></h2>
-        <p class="text-slate-400 text-sm">Businesses and organisations supporting Team Acceler8's STEM Racing journey.</p>
+        <h2 class="font-orbitron font-bold text-3xl text-white mb-2">OUR <span class="text-red-500">SPONSORS &amp;
+            PARTNERS</span></h2>
+        <p class="text-slate-400 text-sm">Businesses and organisations supporting Team Acceler8's STEM Racing journey.
+        </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
+
         <!-- Partner 1 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+        <div
+          class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
           <div>
-            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
-              <img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Title / Gold Sponsor</p></div>
+            <div class="min-h-[150px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo"
+                class="h-28 md:h-32 w-auto max-w-full object-contain rounded-md hidden"
+                onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')"
+                onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i>
+                <p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p>
+                <p class="text-[10px] text-slate-600">Title / Gold Sponsor</p>
+              </div>
             </div>
             <h3 class="font-orbitron font-bold text-base text-white mb-2">Partner Name</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief details about this partner business, their expertise, and how they support Team Acceler8.</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief details about this partner business, their
+              expertise, and how they support Team Acceler8.</p>
           </div>
           <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
-            <a href="mailto:contact@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>contact@example.com</span></a>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+              class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:contact@example.com"
+              class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>contact@example.com</span></a>
           </div>
         </div>
 
         <!-- Partner 2 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+        <div
+          class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
           <div>
-            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
-              <img src="sponsor-logo-2.jpeg" alt="Merch sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p><p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p></div>
+            <div class="min-h-[150px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-2.jpeg" alt="Merch sponsor logo"
+                class="h-28 md:h-32 w-auto max-w-full object-contain rounded-md hidden"
+                onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')"
+                onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i>
+                <p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p>
+                <p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p>
+              </div>
             </div>
             <h3 class="font-orbitron font-bold text-base text-white mb-2">Homely Candles</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">At Homely Candles, they have high-quality handmade candles in stock in afforable prices. Click on the link to find out more.</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">At Homely Candles, they have high-quality handmade,
+              homemade
+              candles in stock in afforable prices. Click on the link to find out more.</p>
           </div>
           <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
-            <a href="https://homelycandlesuk.com/collections/all" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>https://homelycandlesuk.com/collections/all</span></a>
+            <a href="https://homelycandlesuk.com/collections/all" target="_blank" rel="noopener noreferrer"
+              class="text-red-400 hover:underline flex items-center justify-center gap-1.5 break-all"><i
+                class="fa-solid fa-globe text-[10px]"></i><span>https://homelycandlesuk.com/collections/all</span></a>
           </div>
         </div>
 
         <!-- Partner 3 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+        <div
+          class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
           <div>
-            <div class="min-h-[160px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
-              <img src="sponsor-logo-3.png" alt="Material sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p><p class="text-[10px] text-slate-600">3D Printing / Machining</p></div>
+            <div class="min-h-[150px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-3.png" alt="Material sponsor logo"
+                class="h-28 md:h-32 w-auto max-w-full object-contain rounded-md hidden"
+                onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')"
+                onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i>
+                <p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p>
+                <p class="text-[10px] text-slate-600">3D Printing / Machining</p>
+              </div>
             </div>
             <h3 class="font-orbitron font-bold text-base text-white mb-2">Manufacturing Partner</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">Providing raw materials, precision CNC machining services, and high-grade 3D printing filaments.</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Providing raw materials, precision CNC machining
+              services, and high-grade 3D printing filaments.</p>
           </div>
           <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
-            <a href="mailto:materials@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>materials@example.com</span></a>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+              class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:materials@example.com"
+              class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>materials@example.com</span></a>
           </div>
         </div>
 
         <!-- Partner 4 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+        <div
+          class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
           <div>
-            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
-              <img src="sponsor-logo-4.png" alt="Silver Partner logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Silver Partner</p></div>
+            <div class="min-h-[150px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-4.png" alt="Silver Partner logo"
+                class="h-28 md:h-32 w-auto max-w-full object-contain rounded-md hidden"
+                onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')"
+                onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i>
+                <p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p>
+                <p class="text-[10px] text-slate-600">Silver Partner</p>
+              </div>
             </div>
             <h3 class="font-orbitron font-bold text-base text-white mb-2">Silver Partner</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief description of the partner company, their mission, and their contribution to Team Acceler8.</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief description of the partner company, their
+              mission, and their contribution to Team Acceler8.</p>
           </div>
           <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
-            <a href="mailto:partner@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>partner@example.com</span></a>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+              class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:partner@example.com"
+              class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i
+                class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>partner@example.com</span></a>
           </div>
         </div>
 
@@ -428,8 +581,10 @@
     <div class="max-w-4xl mx-auto px-4">
       <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl">
         <div class="text-center mb-8">
-          <h2 class="font-orbitron font-bold text-3xl text-white mb-2">GET IN <span class="text-red-500">TOUCH</span></h2>
-          <p class="text-slate-400 text-sm">Send a message to discuss monetary, material, or merchandise sponsorship for Team Acceler8.</p>
+          <h2 class="font-orbitron font-bold text-3xl text-white mb-2">GET IN <span class="text-red-500">TOUCH</span>
+          </h2>
+          <p class="text-slate-400 text-sm">Send a message to discuss monetary, material, or merchandise sponsorship for
+            Team Acceler8.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-xs font-mono">
           <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
@@ -437,22 +592,28 @@
             <span class="text-white font-sans text-sm font-semibold">Langley Grammar School, Slough, UK</span>
           </div>
           <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
-            <span class="text-slate-500 uppercase block mb-1">Team Manager Contact</span>
-            <a href="mailto:23GabrielDumoulin@lgs.slough.sch.uk" class="text-red-400 hover:underline">23GabrielDumoulin@lgs.slough.sch.uk</a>
+            <span class="text-slate-500 uppercase block mb-1">Team Contact</span>
+            <a href="mailto:acceler8ers@gmail.com" class="text-red-400 hover:underline">acceler8ers@gmail.com</a>
           </div>
         </div>
-        <form action="mailto:23GabrielDumoulin@lgs.slough.sch.uk" method="post" enctype="text/plain" class="space-y-4">
+        <form action="mailto:acceler8ers@gmail.com" method="post" enctype="text/plain" class="space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" name="Name" placeholder="Your Name / Company Name" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
-            <input type="email" name="Email" placeholder="Your Email Address" required class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
+            <input type="text" name="Name" placeholder="Your Name / Company Name" required
+              class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
+            <input type="email" name="Email" placeholder="Your Email Address" required
+              class="bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500">
           </div>
-          <select name="Sponsorship_Type" class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-red-500">
+          <select name="Sponsorship_Type"
+            class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-red-500">
             <option value="Material/Merch Sponsorship">In-Kind: Materials, Merch, or Manufacturing Services</option>
             <option value="Monetary Sponsorship">Monetary Funding (Bronze / Silver / Gold Tier)</option>
             <option value="General Inquiry">General Partnership Inquiry</option>
           </select>
-          <textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8." class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"></textarea>
-          <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold py-3 rounded uppercase transition glow-red">Send Message</button>
+          <textarea name="Message" rows="4" placeholder="Tell us how you would like to partner with Team Acceler8."
+            class="w-full bg-slate-900 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-red-500"></textarea>
+          <button type="submit"
+            class="w-full bg-red-600 hover:bg-red-700 text-white font-orbitron font-bold py-3 rounded uppercase transition glow-red">Send
+            Message</button>
         </form>
       </div>
     </div>
@@ -471,7 +632,7 @@
       const slides = document.querySelectorAll('.carousel-slide');
       const indicators = document.querySelectorAll('.indicator');
 
-      if (slides.length === 0) return; 
+      if (slides.length === 0) return;
 
       slides.forEach((slide, index) => {
         if (index === currentSlide) {
@@ -510,9 +671,10 @@
       currentSlide = index;
       updateCarousel();
     }
-    
+
     // Initialize carousel on load
     document.addEventListener("DOMContentLoaded", updateCarousel);
   </script>
 </body>
+
 </html>
