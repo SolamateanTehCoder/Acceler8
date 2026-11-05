@@ -340,29 +340,80 @@
   </section>
 
   <!-- Partners Display Section -->
+<!-- Partners Display Section -->
   <section id="sponsors-display" class="py-16 bg-slate-900 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-12">
         <h2 class="font-orbitron font-bold text-3xl text-white mb-2">OUR <span class="text-red-500">SPONSORS &amp; PARTNERS</span></h2>
         <p class="text-slate-400 text-sm">Businesses and organisations supporting Team Acceler8's STEM Racing journey.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
-          <img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Title / Gold Sponsor</p></div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Partner 1 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+          <div>
+            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-1.png" alt="Title or Gold Sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-handshake text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Title / Gold Sponsor</p></div>
+            </div>
+            <h3 class="font-orbitron font-bold text-base text-white mb-2">Partner Name</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief details about this partner business, their expertise, and how they support Team Acceler8.</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:contact@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>contact@example.com</span></a>
+          </div>
         </div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
-          <img src="sponsor-logo-2.jpeg" alt="Merch sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p><p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p></div>
+
+        <!-- Partner 2 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+          <div>
+            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-2.jpeg" alt="Merch sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-shirt text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MERCH SPONSOR</p><p class="text-[10px] text-slate-600">Uniform &amp; Clothing Partner</p></div>
+            </div>
+            <h3 class="font-orbitron font-bold text-base text-white mb-2">Merchandise Partner</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">At Homely Candles, they have high-quality handmade candles in stock in afforable prices. Click on the link to find out more: https://homelycandlesuk.com/collections/all</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:merch@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>merch@example.com</span></a>
+          </div>
         </div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
-          <img src="sponsor-logo-3.png" alt="Material sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p><p class="text-[10px] text-slate-600">3D Printing / Machining</p></div>
+
+        <!-- Partner 3 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+          <div>
+            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-3.png" alt="Material sponsor logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-cubes text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">MATERIAL SPONSOR</p><p class="text-[10px] text-slate-600">3D Printing / Machining</p></div>
+            </div>
+            <h3 class="font-orbitron font-bold text-base text-white mb-2">Manufacturing Partner</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Providing raw materials, precision CNC machining services, and high-grade 3D printing filaments.</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:materials@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>materials@example.com</span></a>
+          </div>
         </div>
-        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col items-center justify-center min-h-[120px] text-center border-dashed">
-          <img src="sponsor-logo-4.png" alt="Silver Partner logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
-          <div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Silver Partner</p></div>
+
+        <!-- Partner 4 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-lg p-6 flex flex-col justify-between text-center border-dashed">
+          <div>
+            <div class="min-h-[100px] flex flex-col items-center justify-center mb-4 border-b border-slate-800/80 pb-4">
+              <img src="sponsor-logo-4.png" alt="Silver Partner logo" class="max-h-12 max-w-full object-contain hidden" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden')">
+              <div class="text-slate-600 space-y-1"><i class="fa-solid fa-award text-2xl"></i><p class="font-orbitron text-xs text-slate-500 font-bold">YOUR LOGO HERE</p><p class="text-[10px] text-slate-600">Silver Partner</p></div>
+            </div>
+            <h3 class="font-orbitron font-bold text-base text-white mb-2">Silver Partner</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Brief description of the partner company, their mission, and their contribution to Team Acceler8.</p>
+          </div>
+          <div class="pt-2 border-t border-slate-800/60 text-xs flex flex-col gap-1.5">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline flex items-center justify-center gap-1.5"><i class="fa-solid fa-globe text-[10px]"></i><span>www.example.com</span></a>
+            <a href="mailto:partner@example.com" class="text-slate-400 hover:text-white flex items-center justify-center gap-1.5"><i class="fa-solid fa-envelope text-[10px] text-red-500"></i><span>partner@example.com</span></a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
